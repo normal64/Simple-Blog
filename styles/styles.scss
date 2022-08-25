@@ -42,5 +42,12 @@ html,body{
     }
 }
 .container-single-post{
-    
+    background: #FFF9EA;
+    margin-top: 1%;
+    padding: 1%;
+    border-radius: 9px;
+    box-shadow: 5px 1px black;
+    h1,p{
+        text-transform: capitalize;
+    }
 }
