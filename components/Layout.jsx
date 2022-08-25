@@ -19,6 +19,8 @@ const Layout = (props) => {
             />
             </Head>
             <header className={LayoutStyles.header}>
+                <Link id='logo-link' href="/">
+                    <a >
                 <Image 
                 className={LayoutStyles.icon}
                 width={80}
@@ -26,14 +28,22 @@ const Layout = (props) => {
                 src="/blog.png"
                 alt="blog icon"
                 />
+                </a>
+                </Link>
+                <div  className={LayoutStyles.linkContainer}>
                 <Link href="/">
-                    <a >Main</a>
+                    <a className={LayoutStyles.navigationLink}>Main</a>
                 </Link>
                 
+                </div>
+                
                 </header>
-                <div className={LayoutStyles.container}>{props.children}</div>
+                <div className={LayoutStyles.container}>
+                    {props.children}
+                </div>
                 <footer className={LayoutStyles.footer}>
-                    2022 &copy; Blog next
+                    2022 &copy; Blog next &nbsp;
+                    <p className={LayoutStyles.smallText}>but design like in 1998</p>
                 </footer>
           </>  
     )
