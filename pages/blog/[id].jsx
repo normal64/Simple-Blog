@@ -12,7 +12,7 @@ return "Post not found"
     }
     return (
         <Layout>
-        <div>
+        <div className="container-single-post">
             <h1>{post.post.title}</h1>
             <p>{post.post.body}</p>
         </div>

@@ -10,7 +10,7 @@ export default function Home(props) {
   console.log("test",`${process.env.API_URL}/posts`);
   return (
     <Layout>
-  <h1>Some next Blog</h1>
+  <h1>Every project is a prove of my design skills </h1>
   
     {props.posts.map( post =>{
        
