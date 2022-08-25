@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+$light-pink: #FFEBE7; 
+$bx:  '0 3px 6px rgba(0,0,0,.06)';
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $light-pink;
+}
+.blog-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: $bx;
+    padding: 16px;
+    margin-bottom: 15px;
+    h5{
+        margin: 0;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        color: #333;
+        font-size: 16px;
+    }
+    p{
+        text-transform: capitalize;
+        color: #444;
+        font-size: 14px;
+    }
+    a{
+        background-color: $light-pink;
+        text-decoration: none;
+        // float: right;
+        display: inline-block;
+        color: #896e6e;
+        &:hover{
+            background-color: darken($light-pink, 5%);
+        }
+        transition: background-color .4s ease;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+    .text-align-right{
+        text-align: right;
+    }
+}
